@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Javacsript calculator" />
+    <title>Javacsript calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="" id="calculator">
+      <input type="text" id="display" />
+      <div id="keys">
+        <div class="row">
+          <input
+            type="button"
+            class="reset-keys"
+            value="AC"
+            id="AC"
+            onclick="updateScreen('AC')"
+          />
+          <input
+            type="button"
+            class="reset-keys"
+            value="C"
+            id="C"
+            onclick="updateScreen('C')"
+          />
+          <button
+            type="button"
+            class="operators-keys"
+            value="/"
+            onclick="updateScreen('/')"
+          >
+            &#247;
+          </button>
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            class="numbers-keys"
+            value="7"
+            onclick="updateScreen('7')"
+          />
+          <input
+            type="button"
+            class="numbers-keys"
+            value="8"
+            onclick="updateScreen('8')"
+          />
+          <input
+            type="button"
+            class="numbers-keys"
+            value="9"
+            onclick="updateScreen('9')"
+          />
+          <button
+            type="button"
+            class="operators-keys"
+            value="*"
+            onclick="updateScreen('*')"
+          >
+            &#215;
+          </button>
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            class="numbers-keys"
+            value="4"
+            onclick="updateScreen('4')"
+          />
+          <input
+            type="button"
+            class="numbers-keys"
+            value="5"
+            onclick="updateScreen('5')"
+          />
+          <input
+            type="button"
+            class="numbers-keys"
+            value="6"
+            onclick="updateScreen('6')"
+          />
+          <input
+            type="button"
+            class="operators-keys"
+            value="+"
+            onclick="updateScreen('+')"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            class="numbers-keys"
+            value="1"
+            onclick="updateScreen('1')"
+          />
+          <input
+            type="button"
+            class="numbers-keys"
+            value="2"
+            onclick="updateScreen('2')"
+          />
+          <input
+            type="button"
+            class="numbers-keys"
+            value="3"
+            onclick="updateScreen('3')"
+          />
+          <input
+            type="button"
+            class="operators-keys"
+            value="-"
+            onclick="updateScreen('-')"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            class="numbers-keys"
+            value="0"
+            onclick="updateScreen('0')"
+          />
+          <input
+            type="button"
+            class="operators-keys"
+            value="."
+            onclick="updateScreen('.')"
+          />
+          <input
+            type="button"
+            class="operators-keys"
+            value="="
+            id="result"
+            onclick="showResult()"
+          />
+        </div>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
